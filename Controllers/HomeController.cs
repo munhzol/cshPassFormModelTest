@@ -19,7 +19,12 @@ namespace MvcSurvey.Controllers
         [HttpPost("process")]
         public IActionResult Process(Survey survey)
         {
-            return View("Survey", survey);
+            if(ModelState.IsValid)
+            {
+                return View("Survey", survey);
+            } else {
+                return View("Index");
+            }
         }
 
 

@@ -28,3 +28,4 @@
 /Users/munhzol/Documents/dojo/csharp/2.2/MvcSurvey/obj/Debug/netcoreapp2.2/MvcSurvey.dll
 /Users/munhzol/Documents/dojo/csharp/2.2/MvcSurvey/obj/Debug/netcoreapp2.2/MvcSurvey.pdb
 /Users/munhzol/Documents/dojo/csharp/2.2/MvcSurvey/obj/Debug/netcoreapp2.2/MvcSurvey.csproj.CopyComplete
+/Users/munhzol/Documents/dojo/csharp/2.2/MvcSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Survey.g.cshtml.cs

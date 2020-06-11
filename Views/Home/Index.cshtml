@@ -6,32 +6,37 @@
     <h1 class="display-4">Survey</h1>
 </div>
 
+@model Survey
 <form method="post" action="process">
     <div class="form-group">
-        <label for="exampleFormControlInput1">Your Name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="Name">
+        <label asp-for="Name">Your Name</label>
+        <input type="text" class="form-control" placeholder="" asp-for="Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
     </div>
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Location</label>
-        <select class="form-control" id="exampleFormControlSelect1" name="Location">
+        <label asp-for="Location">Location</label>
+        <select class="form-control" asp-for="Location">
             <option value="DC">DC</option>
             <option value="Chicago">Chicago</option>
             <option value="San Jose">San Jose</option>
             <option value="Toronto">Toronto</option>
         </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Language</label>
-            <select class="form-control" id="exampleFormControlSelect2" name="Language">
-            <option value="C#">C#</option>
-            <option value="ReactJS">ReactJS</option>
-            <option value="DJANGO">DJANGO</option>
-            <option value="Python">Python</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Comment /optional/</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Comment"></textarea>
-        </div>
-        <input type="submit" class="btn btn-primary" />
-    </form>    
+        <span class="text-danger" asp-validation-for="Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Language">Language</label>
+        <select class="form-control" asp-for="Language">
+        <option value="C#">C#</option>
+        <option value="ReactJS">ReactJS</option>
+        <option value="DJANGO">DJANGO</option>
+        <option value="Python">Python</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Language"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Comment">Comment /optional/</label>
+        <textarea class="form-control" rows="3" asp-for="Comment"></textarea>
+        <span class="text-danger" asp-validation-for="Comment"></span>
+    </div>
+    <input type="submit" class="btn btn-primary" />
+</form>    
