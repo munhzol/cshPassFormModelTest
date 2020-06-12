@@ -38,5 +38,10 @@
         <textarea class="form-control" rows="3" asp-for="Comment"></textarea>
         <span class="text-danger" asp-validation-for="Comment"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="DDay">Future Day</label>
+        <input class="form-control" asp-for="DDay">
+        <span class="text-danger" asp-validation-for="DDay"></span>
+    </div>
     <input type="submit" class="btn btn-primary" />
 </form>    
